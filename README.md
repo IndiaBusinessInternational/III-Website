@@ -1,6 +1,6 @@
-# India Intelligence International — Company Website
+# India Intelligence International — Company Website v1.4
 
-**intelligence for the World** · v1.1
+**intelligence for the World** · v1.4
 
 The official website of **India Intelligence International (III)** — a futuristic,
 mobile-first, single-file site presenting the complete arsenal of 31 professional

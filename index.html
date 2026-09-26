@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- IBI-PWA-KIT: installable app (manifest + icons + service worker) -->
+<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+<meta name="theme-color" content="#050008">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="III">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<script>if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>India Intelligence International — The Future of eCommerce, Engineered</title>
 <meta name="description" content="India Intelligence International (III) — 32 battle-tested eCommerce technology tools for Indian multi-marketplace sellers. Billing, GST, orders, finance, media & automation. One subscription. ₹299 / 30 days.">
-<meta name="theme-color" content="#050008">
 <meta property="og:title" content="India Intelligence International — intelligence for the World">
 <meta property="og:description" content="The complete eCommerce technology arsenal: 32 professional tools for billing, compliance, fulfilment, finance, growth and media — built for Indian sellers.">
 <meta property="og:type" content="website">
@@ -357,7 +365,7 @@ footer{border-top:1px solid var(--line2);background:linear-gradient(180deg,trans
 <!-- ================= NAV ================= -->
 <nav class="nav" id="nav">
   <div class="wrap nav-in">
-    <span class="vbadge" title="Website version">v1.3</span>
+    <span class="vbadge" title="Website version">v1.4</span>
     <a class="brand" href="#top" aria-label="India Intelligence International — home">
       <svg class="mark" viewBox="0 0 512 512" aria-hidden="true"><g fill="#7F00FF"><circle cx="87" cy="100" r="9"/><circle cx="87" cy="178" r="9"/><circle cx="87" cy="256" r="9"/><circle cx="87" cy="334" r="9"/><circle cx="87" cy="412" r="9"/><circle cx="165" cy="100" r="15"/><circle cx="165" cy="178" r="15"/><circle cx="165" cy="256" r="15"/><circle cx="165" cy="334" r="15"/><circle cx="165" cy="412" r="15"/><circle cx="243" cy="100" r="21"/><circle cx="243" cy="178" r="21"/><circle cx="243" cy="256" r="21"/><circle cx="243" cy="334" r="21"/><circle cx="243" cy="412" r="21"/><circle cx="321" cy="100" r="28"/><circle cx="321" cy="178" r="28"/><circle cx="321" cy="256" r="28"/><circle cx="321" cy="334" r="28"/><circle cx="321" cy="412" r="28"/><circle cx="399" cy="100" r="35"/><circle cx="399" cy="178" r="35"/><circle cx="399" cy="256" r="35"/><circle cx="399" cy="334" r="35"/><circle cx="399" cy="412" r="35"/></g></svg>
       <span class="bt">India Intelligence<br>International<small>intelligence for the World</small></span>
