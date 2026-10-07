@@ -1,6 +1,9 @@
-# India Intelligence International — Company Website v1.4
+# India Intelligence International — Company Website v1.5
 
-**intelligence for the World** · v1.4
+**intelligence for the World** · v1.5
+
+**Own app identity (v1.5, 7 Oct 2026)** — the install manifest now carries `"id": "/III-Website/"`. Before, `"id": "./"` resolved to the bare origin `https://indiabusinessinternational.github.io/`, which every IBI app published under github.io shared — so Chrome treated installing a second such app as an UPDATE of the first and silently re-pointed it (an installed IBI Gold Mines icon opened Screen Recorder Studio). The new id is unique to this app. An install made before this release keeps the old shared id; uninstall it and install again from the page.
+
 
 The official website of **India Intelligence International (III)** — a futuristic,
 mobile-first, single-file site presenting the complete arsenal of 31 professional
