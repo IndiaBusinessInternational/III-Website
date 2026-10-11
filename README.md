@@ -1,6 +1,8 @@
-# India Intelligence International — Company Website v1.5
+# India Intelligence International — Company Website v1.6
 
-**intelligence for the World** · v1.5
+**intelligence for the World** · v1.6
+
+**Phones edge to edge (v1.6, 11 Oct 2026)** — on screens up to 640px the sections have no outer gutter, cards are full-bleed (no side border, radius or shadow) with 10px inner sides, and the page can never be wider than the screen (CEO rule).
 
 **Own app identity (v1.5, 7 Oct 2026)** — the install manifest now carries `"id": "/III-Website/"`. Before, `"id": "./"` resolved to the bare origin `https://indiabusinessinternational.github.io/`, which every IBI app published under github.io shared — so Chrome treated installing a second such app as an UPDATE of the first and silently re-pointed it (an installed IBI Gold Mines icon opened Screen Recorder Studio). The new id is unique to this app. An install made before this release keeps the old shared id; uninstall it and install again from the page.
 
