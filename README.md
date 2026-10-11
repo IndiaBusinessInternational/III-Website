@@ -1,6 +1,8 @@
-# India Intelligence International — Company Website v1.6
+# India Intelligence International — Company Website v1.7
 
-**intelligence for the World** · v1.6
+**intelligence for the World** · v1.7
+
+**Long words (v1.7, 11 Oct 2026)** — phones use `overflow-wrap: break-word` (v1.6 used `anywhere`, which can split button text mid-word).
 
 **Phones edge to edge (v1.6, 11 Oct 2026)** — on screens up to 640px the sections have no outer gutter, cards are full-bleed (no side border, radius or shadow) with 10px inner sides, and the page can never be wider than the screen (CEO rule).
 

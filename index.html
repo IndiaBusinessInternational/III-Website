@@ -353,7 +353,7 @@ footer{border-top:1px solid var(--line2);background:linear-gradient(180deg,trans
 @media(max-width:400px){
   .tgrid{grid-template-columns:1fr}
 }
-/* v1.6 — phones edge to edge (CEO 11 Oct 2026: "edge to edge with no padding to make screen bigger"): no outer gutter,
+/* v1.6/v1.7 — phones edge to edge (CEO 11 Oct 2026: "edge to edge with no padding to make screen bigger"): no outer gutter,
    full-bleed cards (no side border / radius / shadow), 10px inner sides (the least that keeps letters off curved screen
    edges), header 8px; the page is never wider than the screen (clip, not hidden) and long words break inside their box. */
 @media(max-width:640px){
@@ -362,7 +362,7 @@ footer{border-top:1px solid var(--line2);background:linear-gradient(180deg,trans
   .nav .wrap{padding:0 8px}
   .fgrid,.tgrid,.steps,.faq,.price-wrap,.dash,.locknote{margin-left:-10px;margin-right:-10px}
   .fgrid,.tgrid,.steps{gap:8px}
-  .fcard,.tcard,.step,.price,.qa,.dash,.locknote{border-radius:0;border-left:0;border-right:0;box-shadow:none;overflow-wrap:anywhere}
+  .fcard,.tcard,.step,.price,.qa,.dash,.locknote{border-radius:0;border-left:0;border-right:0;box-shadow:none;overflow-wrap:break-word}
   .fcard{padding:20px 10px}
   .tcard{padding:14px 10px}
   .step{padding:20px 10px}
@@ -397,7 +397,7 @@ footer{border-top:1px solid var(--line2);background:linear-gradient(180deg,trans
 <!-- ================= NAV ================= -->
 <nav class="nav" id="nav">
   <div class="wrap nav-in">
-    <span class="vbadge" title="Website version">v1.6</span>
+    <span class="vbadge" title="Website version">v1.7</span>
     <a class="brand" href="#top" aria-label="India Intelligence International — home">
       <svg class="mark" viewBox="0 0 512 512" aria-hidden="true"><g fill="#7F00FF"><circle cx="87" cy="100" r="9"/><circle cx="87" cy="178" r="9"/><circle cx="87" cy="256" r="9"/><circle cx="87" cy="334" r="9"/><circle cx="87" cy="412" r="9"/><circle cx="165" cy="100" r="15"/><circle cx="165" cy="178" r="15"/><circle cx="165" cy="256" r="15"/><circle cx="165" cy="334" r="15"/><circle cx="165" cy="412" r="15"/><circle cx="243" cy="100" r="21"/><circle cx="243" cy="178" r="21"/><circle cx="243" cy="256" r="21"/><circle cx="243" cy="334" r="21"/><circle cx="243" cy="412" r="21"/><circle cx="321" cy="100" r="28"/><circle cx="321" cy="178" r="28"/><circle cx="321" cy="256" r="28"/><circle cx="321" cy="334" r="28"/><circle cx="321" cy="412" r="28"/><circle cx="399" cy="100" r="35"/><circle cx="399" cy="178" r="35"/><circle cx="399" cy="256" r="35"/><circle cx="399" cy="334" r="35"/><circle cx="399" cy="412" r="35"/></g></svg>
       <span class="bt">India Intelligence<br>International<small>intelligence for the World</small></span>
