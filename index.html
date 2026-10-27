@@ -356,6 +356,43 @@ footer{border-top:1px solid var(--line2);background:linear-gradient(180deg,trans
 @media(max-width:400px){
   .tgrid{grid-template-columns:1fr}
 }
+/* v1.9 — edge to edge on every screen (Founder, 27 Oct 2026: "Yes, make all the apps edge to edge on laptop too").
+   The 1240px centred column, the 920px hero column and the 520px / 760px pricing and FAQ columns are gone: sections run
+   the full screen width with 10px inside, cards are full-bleed at the screen edges (no side border / radius / shadow),
+   wide screens get more cards per row, the pricing card puts its feature list beside the price, and the FAQ runs in two
+   columns. Text keeps its own reading width. The phone block below still wins on phones. */
+html,body{overflow-x:clip}
+.wrap{max-width:none;padding:0 10px}
+.nav .wrap{padding:0 10px}
+.hero-in{max-width:none}
+.fgrid,.tgrid,.steps,.faq,.price-wrap,.dash,.locknote{margin-left:-10px;margin-right:-10px}
+.fcard,.tcard,.step,.price,.qa,.dash,.locknote{border-radius:0;border-left:0;border-right:0;box-shadow:none;overflow-wrap:break-word}
+.fcard:hover,.tcard:hover,.step:hover{box-shadow:none}
+.fcard{padding-left:10px;padding-right:10px}
+.tcard{padding-left:10px;padding-right:10px}
+.step{padding-left:10px;padding-right:10px}
+.price{padding-left:10px;padding-right:10px}
+.qa button.q{padding-left:10px;padding-right:10px}
+.qa .a > div{padding-left:10px;padding-right:10px}
+.dash{padding-left:10px;padding-right:10px}
+.locknote{padding-left:10px;padding-right:10px;margin-top:16px}
+.price-wrap,.faq{max-width:none}
+.qa .a > div{max-width:75ch}
+@media(min-width:900px){
+  .fgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .price{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px;align-items:start}
+  .price > *{grid-column:1}
+  .price ul{grid-column:2;grid-row:1 / span 6;align-self:center;margin:0}
+  .faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));column-gap:12px;align-items:start}
+}
+@media(min-width:1100px){
+  .future .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:48px;align-items:start}
+  .future .wrap > .reveal{position:sticky;top:96px}
+  .future .tl{margin-top:0}
+}
+@media(min-width:1800px){
+  .fgrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+}
 /* v1.6/v1.7 — phones edge to edge (CEO 11 Oct 2026: "edge to edge with no padding to make screen bigger"): no outer gutter,
    full-bleed cards (no side border / radius / shadow), 10px inner sides (the least that keeps letters off curved screen
    edges), header 8px; the page is never wider than the screen (clip, not hidden) and long words break inside their box. */
@@ -400,7 +437,7 @@ footer{border-top:1px solid var(--line2);background:linear-gradient(180deg,trans
 <!-- ================= NAV ================= -->
 <nav class="nav" id="nav">
   <div class="wrap nav-in">
-    <span class="vbadge" title="Website version">v1.8</span>
+    <span class="vbadge" title="Website version">v1.9</span>
     <a class="brand" href="#top" aria-label="India Intelligence International — home">
       <svg class="mark" viewBox="0 0 512 512" aria-hidden="true"><g fill="#7F00FF"><circle cx="87" cy="100" r="9"/><circle cx="87" cy="178" r="9"/><circle cx="87" cy="256" r="9"/><circle cx="87" cy="334" r="9"/><circle cx="87" cy="412" r="9"/><circle cx="165" cy="100" r="15"/><circle cx="165" cy="178" r="15"/><circle cx="165" cy="256" r="15"/><circle cx="165" cy="334" r="15"/><circle cx="165" cy="412" r="15"/><circle cx="243" cy="100" r="21"/><circle cx="243" cy="178" r="21"/><circle cx="243" cy="256" r="21"/><circle cx="243" cy="334" r="21"/><circle cx="243" cy="412" r="21"/><circle cx="321" cy="100" r="28"/><circle cx="321" cy="178" r="28"/><circle cx="321" cy="256" r="28"/><circle cx="321" cy="334" r="28"/><circle cx="321" cy="412" r="28"/><circle cx="399" cy="100" r="35"/><circle cx="399" cy="178" r="35"/><circle cx="399" cy="256" r="35"/><circle cx="399" cy="334" r="35"/><circle cx="399" cy="412" r="35"/></g></svg>
       <span class="bt">India Intelligence<br>International<small>intelligence for the World</small></span>

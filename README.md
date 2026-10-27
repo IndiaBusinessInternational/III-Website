@@ -1,6 +1,8 @@
-# India Intelligence International — Company Website v1.8
+# India Intelligence International — Company Website v1.9
 
-**intelligence for the World** · v1.8
+**intelligence for the World** · v1.9
+
+**Edge to edge on every screen (v1.9, 27 Oct 2026)** — Founder: "Yes, make all the apps edge to edge on laptop too, each with its own version bump." The 1240px page column, the 920px hero column and the 520px / 760px pricing and FAQ columns are gone at every width: sections run full width with a 10px inner side inset, cards are full-bleed at the screen edges (no side border, radius or shadow) with 10px inner sides, wide screens show more cards per row, the pricing card puts its feature list beside the price (900px and wider) and the FAQ runs in two columns. `html, body { overflow-x: clip }` everywhere. Phones unchanged.
 
 **WhatsApp link preview + Share (v1.8, 27 Oct 2026)** — the preview banner is now a 1200×630 JPEG under 300 KB (`og-banner.jpg`, `og:image:type` image/jpeg; `og-banner.png` kept), and a round Share button (`ibi-share.js`, IBI Share v1.0) at the end of the top bar shares the site link to WhatsApp, Facebook, X, Telegram, Email, Copy link or More apps (Founder: "all web apps should have a sharing link too").
 
