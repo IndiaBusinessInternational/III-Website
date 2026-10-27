@@ -1,6 +1,8 @@
-# India Intelligence International — Company Website v1.7
+# India Intelligence International — Company Website v1.8
 
-**intelligence for the World** · v1.7
+**intelligence for the World** · v1.8
+
+**WhatsApp link preview + Share (v1.8, 27 Oct 2026)** — the preview banner is now a 1200×630 JPEG under 300 KB (`og-banner.jpg`, `og:image:type` image/jpeg; `og-banner.png` kept), and a round Share button (`ibi-share.js`, IBI Share v1.0) at the end of the top bar shares the site link to WhatsApp, Facebook, X, Telegram, Email, Copy link or More apps (Founder: "all web apps should have a sharing link too").
 
 **Long words (v1.7, 11 Oct 2026)** — phones use `overflow-wrap: break-word` (v1.6 used `anywhere`, which can split button text mid-word).
 
